@@ -137,25 +137,25 @@ Las operaciones SQL se encuentran en `PeliculaDAO.cs` y utilizan parámetros par
 
 ### Registro
 
-![Registro de película](evidencias/01_registrar.png)
+![01_registrar](Evidencias/01_registrar.png)
 
 Se comprueba que es posible registrar una película y visualizarla en la lista.
 
 ### Consulta
 
-![Consulta de películas](evidencias/02_consultar.png)
+![02_consultar](Evidencias/02_consultar.png)
 
 Se muestran los registros almacenados en la base de datos.
 
 ### Actualización
 
-![Actualización](evidencias/03_actualizar.png)
+![03_actualizar](Evidencias/03_actualizar.png)
 
 Se modifica la información de una película y se comprueba que los cambios aparecen en la lista.
 
 ### Eliminación
 
-![Eliminación](evidencias/04_eliminar.png)
+![04_eliminar](Evidencias/04_eliminar.png)
 
 Se elimina un registro y se verifica que desaparece de la lista.
 
@@ -167,7 +167,7 @@ Se intenta guardar información incompleta y la aplicación muestra un mensaje d
 
 ### Persistencia
 
-![Persistencia](evidencias/06_persistencia.png)
+![06_persistencia](Evidencias/06_persistencia.png)
 
 Se cierra y se vuelve a abrir el programa para comprobar que los registros continúan guardados.
 
