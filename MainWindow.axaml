@@ -1,0 +1,76 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="GestorPeliculas.MainWindow"
+        Title="Gestor de Películas y Anime"
+        Width="850"
+        Height="650"
+        MinWidth="650"
+        MinHeight="500">
+
+    <ScrollViewer>
+        <StackPanel Margin="25" Spacing="12">
+
+            <TextBlock Text="GESTOR DE PELÍCULAS Y ANIME"
+                       FontSize="25"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Registra y administra tu colección"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Título:"/>
+            <TextBox x:Name="TxtTitulo"
+                     Watermark="Nombre de la película o anime"/>
+
+            <TextBlock Text="Género:"/>
+            <TextBox x:Name="TxtGenero"
+                     Watermark="Ejemplo: Acción, Romance"/>
+
+            <TextBlock Text="Tipo:"/>
+            <ComboBox x:Name="CmbTipo"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Película"/>
+                <ComboBoxItem Content="Anime"/>
+            </ComboBox>
+
+            <TextBlock Text="Estado:"/>
+            <ComboBox x:Name="CmbEstado"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Pendiente"/>
+                <ComboBoxItem Content="Vista"/>
+            </ComboBox>
+
+            <StackPanel Orientation="Horizontal"
+                        Spacing="10"
+                        HorizontalAlignment="Center">
+
+                <Button Content="Guardar"
+                        Click="BtnGuardar_Click"/>
+
+                <Button Content="Actualizar"
+                        Click="BtnActualizar_Click"/>
+
+                <Button Content="Eliminar"
+                        Click="BtnEliminar_Click"/>
+
+                <Button Content="Limpiar"
+                        Click="BtnLimpiar_Click"/>
+            </StackPanel>
+
+            <TextBlock x:Name="TxtMensaje"
+                       Text="Selecciona o registra una película"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="PELÍCULAS REGISTRADAS"
+                       FontSize="18"
+                       FontWeight="Bold"/>
+
+            <ListBox x:Name="ListaPeliculas"
+                     Height="180"
+                     SelectionChanged="ListaPeliculas_SelectionChanged"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
